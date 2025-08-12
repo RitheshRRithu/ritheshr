@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rithesh R — Portfolio</title>
+  <meta name="description" content="Rithesh R — Software developer | Projects: Smart Attendance, E-commerce site, Campus Navigation" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#1F4E79; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:12px; --gap:18px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071024 0%, #071229 100%); color:#e6eef8; -webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw); margin:36px auto; padding:28px}
+    header{display:flex; gap:16px; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:14px; align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#285a9a);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .logo span{font-size:20px}
+    .name{font-size:18px;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:22px}
+    .card{background:var(--glass); padding:22px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    .intro h1{margin:0;font-size:28px}
+    .intro p{color:var(--muted);margin-top:8px;line-height:1.5}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .sidebar h3{margin:0 0 10px 0;color:var(--accent)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#071a2a;padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+    .contact p{margin:6px 0;color:var(--muted)}
+
+    section{margin-top:var(--gap)}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .project{padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015))}
+    .project h4{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .meta{margin-top:10px;color:var(--muted);font-size:13px}
+
+    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .sidebar{order:2}
+    }
+
+    /* simple print-friendly tweak */
+    @media print{body{background:white;color:black} .card{background:white;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><span>YN</span></div>
+        <div>
+          <div class="name">Rithesh R</div>
+          <div style="color:var(--muted);font-size:13px">Computer Science | Fresher</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card intro">
+        <h1>Hi — I'm <span style="color:var(--accent)">Your Name</span></h1>
+        <p>I build clean, maintainable web & data-driven tools. I’m a recent B.Tech (Computer Science) grad who loves solving real-world problems using Java, Python and modern web tech. I enjoy working in Agile teams and shipping product-focused solutions.</p>
+        <div class="cta">
+          <a class="btn" href="/resume.pdf" download>Download Resume (PDF)</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+
+        <section id="about" style="margin-top:18px">
+          <h3 style="color:var(--accent);margin-bottom:8px">About me</h3>
+          <p style="color:var(--muted);line-height:1.6">I graduated in 2025 with a B.Tech in Computer Science. I enjoy full-stack developing, data analysis, and automating repetitive tasks. Currently looking for entry-level roles in software engineering.</p>
+        </section>
+
+      </div>
+
+      <aside class="sidebar card">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>Email: <a href="ritheshrrithu@gmail.com">ritheshrrithu@gmail.com</a></p>
+          <p>Phone: +91-8197060123</p>
+          <p>Location: Mangalore, Karnataka, India</p>
+          <p><a href="https://www.linkedin.com/in/rithesh-r-9838b919a/" target="_blank">LinkedIn</a> • <a href="https://github.com/RitheshRRithu" target="_blank">GitHub</a></p>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3>Skills</h3>
+          <div class="skills" id="skills">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">React (Basics)</div>
+            <div class="skill">EWS</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3>Availability</h3>
+          <p style="color:var(--muted);margin:0">Open to full-time roles & internships</p>
+        </div>
+      </aside>
+    </div>
+
+    <section id="projects" class="card">
+      <h2 style="margin-top:0;color:var(--accent)">Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h4>Smart Summarize</h4>
+          <p> Large text or Document summarizing tool built using spacy. Built with Python,CSV and HTML. Reduced manual time and improved accuracy.</p>
+          <div class="meta">Role: Sole developer • Year: 2024 • <a href="#" style="color:var(--muted)">GitHub</a></div>
+        </div>
+
+        <div class="project">
+          <h4>E-Commerce Website(Pharmacy Management System)</h4>
+          <p>End-to-end prototype of an online store with product listing, cart, and secure login  using Springboot and AngularJS.Built with HTML/CSS/JS frontend AngularJS,and SQL, Spring Boot backend for order data.</p>
+          <div class="meta">Role: Frontend & Backend • Year: 2023 • <a href="#" style="color:var(--muted)">Live Demo</a></div>
+        </div>
+
+        <div class="project">
+          <h4>Fishery Management System</h4>
+          <p> An application for fishers to manage data regarding fishes.Built with SQL, Java, HTML, CSS.</p>
+          <div class="meta">Role: Team lead • Year: 2024 • <a href="#" style="color:var(--muted)">Prototype</a></div>
+        </div>
+      </div>
+    </section>
+
+<section class="card" id="more">
+      <h2 style="margin-top:0;color:var(--accent)">Internships</h2>
+      <p style="color:var(--muted);margin:6px 0"><strong>Intern —  BB Leads,Mangalore</strong> • Full stack developer — feb 2023 – may 2023</p>
+      <p style="color:var(--muted);margin:6px 0"><strong>Intern —  NIIT,Mangalore</strong> Java programing </p>
+    </section>
+
+    <section class="card" id="more">
+      <h2 style="margin-top:0;color:var(--accent)">Certificate</h2>
+      <p style="color:var(--muted);margin:6px 0"><strong>Programming in Java</strong> • 6 months java developer</p>
+      <p style="color:var(--muted);margin:6px 0"><strong>State Level Event Sentia'22</strong>  Valorant Tournament held at MITE,Mangalore</p>
+<p style="color:var(--muted);margin:6px 0"><strong>Amazon web services</strong>udemy course</p>
+    </section>
+
+ 
+
+
+    <section class="card" id="contact">
+      <h2 style="margin-top:0;color:var(--accent)">Get in touch</h2>
+      <p style="color:var(--muted)">Want to collaborate or have an opportunity? Send me an email or connect on LinkedIn.</p>
+      <p><a class="btn" href="ritheshrrithu@gmail.com">Email me</a></p>
+    </section>
+
+    <footer>
+      Built by Rithesh • <a href="/resume.pdf" style="color:var(--muted)">Download Resume</a>
+    </footer>
+  </div>
+</body>
+</html>
